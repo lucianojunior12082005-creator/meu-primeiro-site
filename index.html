@@ -1,47 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Desenvolvedor Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Navegação Superior -->
-    <nav class="navbar">
-        <div class="logo">Dev.Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <!-- Apresentação Principal (Hero) -->
-    <header class="hero">
-        <span class="badge">Disponível para Projetos & Estágio</span>
-        <h1>Desenvolvedor em Formação</h1>
-        <p>Criando interfaces modernas, responsivas e focadas na melhor experiência do usuário.</p>
-        <a href="#projetos" class="btn-primary">Ver Projetos</a>
-    </header>
-
-    <main class="container">
-        
-        <!-- Seção Sobre Mim -->
-        <section id="sobre" class="section">
-            <h2>Sobre Mim</h2>
-            <div class="card">
-                <p>Estou em transição para a área de tecnologia, desenvolvendo projetos práticos com <strong>HTML, CSS e JavaScript</strong>. Busco construir soluções bem estruturadas, com precisão no código e foco em resolver problemas reais através do software.</p>
-            </div>
-        </section>
-
-        <!-- Seção de Projetos -->
-        <section id="projetos" class="section">
-            <h2>Projetos em Destaque</h2>
+<!-- Seção de Projetos com os Novos Botões -->
             <div class="grid-projetos">
                 
-                <!-- Card Projeto 1 -->
                 <article class="card-projeto">
                     <h3>Landing Page Profissional</h3>
                     <p>Página de alta conversão responsiva com design moderno em tom escuro e estrutura limpa.</p>
@@ -52,11 +11,10 @@
                     </div>
                     <div class="links">
                         <a href="#" class="btn-sm">Ver Site</a>
-                        <a href="#" class="btn-sm outline">Código</a>
+                        <button class="btn-sm outline btn-curtir">❤️ 0 Curtidas</button>
                     </div>
                 </article>
 
-                <!-- Card Projeto 2 -->
                 <article class="card-projeto">
                     <h3>Sistema / Painel de Controle</h3>
                     <p>Interface em desenvolvimento focada na organização de rotinas e gerenciamento de dados.</p>
@@ -67,7 +25,7 @@
                     </div>
                     <div class="links">
                         <a href="#" class="btn-sm">Ver Site</a>
-                        <a href="#" class="btn-sm outline">Código</a>
+                        <button class="btn-sm outline btn-curtir">❤️ 0 Curtidas</button>
                     </div>
                 </article>
 
@@ -82,7 +40,7 @@
                 <div class="contato-botoes">
                     <a href="https://linkedin.com" target="_blank" class="btn-social">LinkedIn</a>
                     <a href="https://github.com" target="_blank" class="btn-social">GitHub</a>
-                    <a href="mailto:seuemail@exemplo.com" class="btn-social">Enviar E-mail</a>
+                    <a href="mailto:seuemail@exemplo.com" class="btn-social btn-email">Enviar E-mail</a>
                 </div>
             </div>
         </section>
@@ -93,5 +51,7 @@
         <p>&copy; 2026 - Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Conexão do arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

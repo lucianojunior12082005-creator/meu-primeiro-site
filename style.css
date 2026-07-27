@@ -215,3 +215,14 @@ footer {
     border-top: 1px solid #1e293b;
     margin-top: 40px;
 }
+/* Efeito de interatividade com JavaScript */
+.btn-curtir {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-curtir.curtido {
+    background-color: rgba(225, 29, 72, 0.2);
+    border-color: #f43f5e;
+    color: #f43f5e;
+}
