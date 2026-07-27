@@ -5,82 +5,213 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fundo escuro e moderno */
 body {
     background-color: #0f172a;
     color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Barra de Navegação */
+.navbar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
-    min-height: 100vh;
+    padding: 20px 10%;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-header h1 {
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
     color: #38bdf8;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
 }
 
-header p {
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #f1f5f9;
+    margin: 15px 0;
+}
+
+.hero p {
     color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
 }
 
-/* Card em estilo escuro elevado */
+.badge {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Layout Geral */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 8px;
+}
+
 .card {
     background-color: #1e293b;
     border: 1px solid #334155;
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    max-width: 420px;
-    text-align: center;
-    position: relative;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-/* Etiqueta / Badge */
-.badge {
-    background-color: #0284c7;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 4px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    display: inline-block;
+.card-center {
+    text-align: center;
+}
+
+/* Grid de Projetos */
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-projeto {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-projeto h3 {
+    color: #f1f5f9;
+    margin-bottom: 10px;
+}
+
+.card-projeto p {
+    color: #94a3b8;
+    font-size: 0.95rem;
     margin-bottom: 15px;
 }
 
-.card h2 {
-    margin-bottom: 12px;
-    color: #f1f5f9;
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
 }
 
-.card p {
-    line-height: 1.6;
-    margin-bottom: 24px;
+.tags span {
+    background-color: #0f172a;
     color: #cbd5e1;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 4px;
 }
 
-/* Botão em tom azul destaque */
-button {
+/* Botões e Links */
+.btn-primary {
+    display: inline-block;
     background-color: #38bdf8;
     color: #0f172a;
-    font-weight: bold;
-    border: none;
     padding: 12px 28px;
     border-radius: 6px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
 }
 
-button:hover {
+.btn-primary:hover {
     background-color: #7dd3fc;
-    transform: translateY(-2px);
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-sm {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.btn-sm.outline {
+    background-color: transparent;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+}
+
+.contato-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-social {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.btn-social:hover {
+    border-color: #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+    margin-top: 40px;
 }
